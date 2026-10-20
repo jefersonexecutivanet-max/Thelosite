@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheloTech | Soluções e Tecnologia Digital</title>
+    <meta name="description" content="TheloTech desenvolve soluções digitais, sites, sistemas e integrações para ajudar empresas a melhorar seus processos.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="TheloTech">
+    <link rel="canonical" href="https://thelotech.vercel.app/">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #0066cc, #ff9900, #ff3300);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-tech-gradient {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #0056b3, #007bff);
+            transition: opacity 0.3s;
+        }
+        
+        .btn-primary:hover { opacity: 0.9; }
+    </style>
+</head>
+<body class="text-gray-800 bg-white">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#inicio" class="block">
+                    <img src="logo.png" alt="Logo Thelo Tech" class="h-10 w-auto">
+                </a>
+            </div>
+            <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Abrir menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            <div id="nav-menu" class="hidden md:flex space-x-8 font-medium text-gray-600">
+                <a href="#inicio" class="hover:text-blue-600 transition">Início</a>
+                <a href="#servicos" class="hover:text-blue-600 transition">Serviços</a>
+                <a href="#projetos" class="hover:text-blue-600 transition">Projetos</a>
+                <a href="#tecnologias" class="hover:text-blue-600 transition">Tecnologia</a>
+                <a href="#contato" class="bg-orange-500 text-white px-5 py-2 rounded-full hover:bg-orange-600 transition">Contato</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white/95 backdrop-blur-md">
+            <div class="container mx-auto px-6 py-4 space-y-3">
+                <a href="#inicio" class="block text-gray-700 font-medium hover:text-blue-600 transition">Início</a>
+                <a href="#servicos" class="block text-gray-700 font-medium hover:text-blue-600 transition">Serviços</a>
+                <a href="#projetos" class="block text-gray-700 font-medium hover:text-blue-600 transition">Projetos</a>
+                <a href="#tecnologias" class="block text-gray-700 font-medium hover:text-blue-600 transition">Tecnologia</a>
+                <a href="#contato" class="block text-orange-600 font-medium hover:text-orange-500 transition">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="py-20 bg-tech-gradient overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Transformando ideias em <span class="gradient-text">soluções digitais</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Especialistas em desenvolvimento de sistemas, apps e IA sob medida para automatizar e modernizar o seu negócio.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contato" class="btn-primary text-white px-8 py-3 rounded-lg font-bold shadow-lg">Solicitar Orçamento</a>
+                    <a href="#projetos" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition">Ver Portfólio</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Simulação de Ícone do Logo em movimento -->
+                <div class="relative w-64 h-64 md:w-96 md:h-96 flex items-center justify-center">
+                    <div class="absolute inset-0 bg-white rounded-full shadow-2xl"></div>
+                    <div class="absolute inset-0 border-4 border-blue-400 rounded-full animate-[spin_10s_linear_infinite] opacity-20"></div>
+                    <div class="absolute inset-0 border-4 border-orange-400 rounded-full animate-[spin_15s_linear_infinite] rotate-45 opacity-20"></div>
+                    <img src="logo.png" alt="Logo Thelo Tech" class="relative z-10 h-44 md:h-56 w-auto rounded-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos Serviços</h2>
+                <div class="w-20 h-1 bg-orange-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Servico 1 -->
+                <div class="p-8 border border-gray-100 rounded-2xl bg-white card-hover shadow-sm">
+                    <div class="text-blue-600 text-4xl mb-4"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Sistemas Web</h3>
+                    <p class="text-gray-600">Sistemas personalizados com foco em desempenho, segurança e escalabilidade.</p>
+                </div>
+                <!-- Servico 2 -->
+                <div class="p-8 border border-gray-100 rounded-2xl bg-white card-hover shadow-sm">
+                    <div class="text-orange-500 text-4xl mb-4"><i class="fas fa-mobile-alt"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Aplicativos Móveis</h3>
+                    <p class="text-gray-600">Desenvolvimento para Android e iOS com as melhores experiências de usuário.</p>
+                </div>
+                <!-- Servico 3 -->
+                <div class="p-8 border border-gray-100 rounded-2xl bg-white card-hover shadow-sm">
+                    <div class="text-red-500 text-4xl mb-4"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Inteligência Artificial</h3>
+                    <p class="text-gray-600">Automação inteligente para atendimento e análise de dados complexos.</p>
+                </div>
+                <!-- Servico 4 -->
+                <div class="p-8 border border-gray-100 rounded-2xl bg-white card-hover shadow-sm">
+                    <div class="text-blue-400 text-4xl mb-4"><i class="fas fa-project-diagram"></i></div>
+                    <h3 class="text-xl font-bold mb-3">APIs e Integrações</h3>
+                    <p class="text-gray-600">Conectamos seu software com ERPs, CRMs, WhatsApp e meios de pagamento.</p>
+                </div>
+                <!-- Servico 5 -->
+                <div class="p-8 border border-gray-100 rounded-2xl bg-white card-hover shadow-sm">
+                    <div class="text-green-500 text-4xl mb-4"><i class="fas fa-tools"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Manutenção e Suporte</h3>
+                    <p class="text-gray-600">Monitoramento contínuo e melhorias constantes para sua plataforma.</p>
+                </div>
+                <!-- Servico 6 -->
+                <div class="p-8 border border-gray-100 rounded-2xl bg-white card-hover shadow-sm">
+                    <div class="text-purple-500 text-4xl mb-4"><i class="fas fa-globe"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Criação de Sites</h3>
+                    <p class="text-gray-600">Landing pages e portais responsivos focados em conversão de clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Projetos em Destaque</h2>
+                <p class="text-gray-600">Soluções reais que entregam resultados para nossos parceiros.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Projeto 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-blue-600 p-8 flex items-center justify-center text-white text-5xl">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold mb-2">ConectPro ISP</h3>
+                        <p class="text-sm text-blue-600 font-semibold mb-4">Gestão para Provedores</p>
+                        <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Financeiro Integrado</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Controle de OS e Técnicos</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Dashboard em Tempo Real</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-orange-500 p-8 flex items-center justify-center text-white text-5xl">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold mb-2">Printer Monitor</h3>
+                        <p class="text-sm text-orange-600 font-semibold mb-4">Monitoramento Inteligente</p>
+                        <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Alertas Automáticos</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Controle de Toner e Insumos</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Inventário de Equipamentos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-red-600 p-8 flex items-center justify-center text-white text-5xl">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold mb-2">ClipAI</h3>
+                        <p class="text-sm text-red-600 font-semibold mb-4">Inteligência Artificial de Vídeo</p>
+                        <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Cortes automáticos para Shorts/Reels</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Legendas Geradas por IA</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Publicação Facilitada</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl flex flex-col md:flex-row">
+                    <div class="md:w-1/3 bg-gray-800 p-8 flex items-center justify-center text-white text-5xl">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h3 class="text-2xl font-bold mb-2">Service Manager</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-4">Gestão de Ordens de Serviço</p>
+                        <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Assinatura Digital</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Histórico de Manutenção</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Controle Financeiro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section id="tecnologias" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Tecnologias que utilizamos</h2>
+            <div class="flex flex-wrap justify-center gap-8 text-gray-400 font-bold text-xl uppercase tracking-widest">
+                <span class="hover:text-blue-500 transition">React</span>
+                <span class="hover:text-black transition">Next.js</span>
+                <span class="hover:text-blue-400 transition">Flutter</span>
+                <span class="hover:text-green-500 transition">Node.js</span>
+                <span class="hover:text-blue-600 transition">TypeScript</span>
+                <span class="hover:text-orange-500 transition">Firebase</span>
+                <span class="hover:text-blue-900 transition">PostgreSQL</span>
+                <span class="hover:text-cyan-500 transition">Docker</span>
+                <span class="hover:text-red-500 transition">OpenAI</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 bg-blue-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6">Vamos criar algo <span class="text-orange-400">incrível?</span></h2>
+                    <p class="text-blue-200 mb-8 text-lg">Estamos prontos para transformar sua ideia em uma solução tecnológica de alto nível.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-orange-400"></i>
+                            </div>
+                            <span>thelotech@hotmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mr-4">
+                                <i class="fab fa-whatsapp text-green-400"></i>
+                            </div>
+                            <span>71 98456-6306</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-800 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-red-400"></i>
+                            </div>
+                            <span>Salvador, Bahia, Brasil</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-white rounded-2xl p-8 text-gray-800 shadow-2xl">
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">Nome Completo</label>
+                            <input type="text" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Seu nome">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">E-mail</label>
+                            <input type="email" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="seu@email.com">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-sm font-bold mb-2">Mensagem</label>
+                            <textarea class="w-full px-4 py-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-lg transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-gray-100 border-t border-gray-200">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <span class="text-2xl font-bold tracking-tighter">
+                    <span class="text-blue-700">Th</span><span class="text-orange-500">Elo</span> <span class="text-blue-900 text-lg font-light">TECH</span>
+                </span>
+            </div>
+            <p class="text-gray-500 text-sm">© 2026 TheloTech. Todos os direitos reservados.</p>
+            <p class="text-gray-400 text-xs mt-2 italic">Simplificando processos e impulsionando o crescimento através da tecnologia.</p>
+            <nav aria-label="Links institucionais" class="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm">
+                <a class="text-blue-700 hover:underline" href="sobre.html">Sobre a TheloTech</a>
+                <a class="text-blue-700 hover:underline" href="privacidade.html">Política de Privacidade</a>
+                <a class="text-blue-700 hover:underline" href="contato.html">Contato e dados da empresa</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        navToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('block');
+        });
+    </script>
+</body>
+</html>
